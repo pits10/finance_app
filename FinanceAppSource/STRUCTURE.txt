@@ -1,0 +1,60 @@
+FinanceAppSource/
+├── README.md                           # Main project documentation
+├── PROJECT_SETUP.md                    # Xcode setup instructions
+├── PROJECT_SUMMARY.md                  # Complete feature checklist
+│
+├── App/
+│   └── FinanceAppApp.swift            # App entry point
+│
+├── Models/
+│   ├── User.swift                     # User model with SwiftData
+│   ├── Friendship.swift               # Friend relationships
+│   ├── Asset.swift                    # Raising assets with levels
+│   ├── WatchlistItem.swift            # Watchlist items
+│   ├── Activity.swift                 # Social activity feed
+│   ├── Yokune.swift                   # Reactions
+│   └── Enums.swift                    # Shared enumerations
+│
+├── Services/
+│   └── Repository/
+│       ├── LocalRepository.swift      # SwiftData persistence
+│       └── RemoteRepository.swift     # Supabase stub
+│
+├── ViewModels/
+│   ├── OnboardingViewModel.swift      # Onboarding logic
+│   ├── HomeViewModel.swift            # Home + check-in logic
+│   ├── RaiseViewModel.swift           # Asset management
+│   ├── WatchlistViewModel.swift       # Watchlist management
+│   ├── FriendsViewModel.swift         # Friends + activities + Yokune
+│   └── AddFriendsViewModel.swift      # Friend requests
+│
+├── Views/
+│   ├── Onboarding/
+│   │   └── OnboardingView.swift       # Onboarding screen
+│   ├── Home/
+│   │   └── HomeView.swift             # Home screen
+│   ├── Raise/
+│   │   └── RaiseView.swift            # Raise (Assets) screen
+│   ├── Watchlist/
+│   │   └── WatchlistView.swift        # Watchlist screen
+│   ├── Friends/
+│   │   └── FriendsView.swift          # Friends screen (Orbit UI)
+│   ├── AddFriends/
+│   │   └── AddFriendsView.swift       # Add Friends screen
+│   ├── Components/
+│   │   ├── PulseView.swift            # Breathing animation
+│   │   ├── OrbitFriendsView.swift     # Friends orbit visualization
+│   │   ├── YokuneRipple.swift         # Yokune button + ripple
+│   │   ├── AssetCard.swift            # Asset display card
+│   │   ├── ActivityCard.swift         # Activity feed card
+│   │   └── PrimaryButton.swift        # Button components
+│   └── MainTabView.swift              # Tab bar navigation
+│
+├── Design/
+│   ├── DesignTokens.swift             # Colors, spacing, typography
+│   └── ThemeManager.swift             # Theme state management
+│
+└── Utilities/
+    └── MockDataGenerator.swift        # Mock data for testing
+
+Total: 32 Swift files
