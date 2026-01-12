@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Asset {
+final class Asset: @unchecked Sendable {
     @Attribute(.unique) var id: UUID
     var ticker: String
     var tags: [String]

@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class WatchlistItem {
+final class WatchlistItem: @unchecked Sendable {
     @Attribute(.unique) var id: UUID
     var ticker: String
     var tags: [String]

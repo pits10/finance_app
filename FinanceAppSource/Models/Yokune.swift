@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Yokune {
+final class Yokune: @unchecked Sendable {
     @Attribute(.unique) var id: UUID
     var fromUserId: UUID
     var activityId: UUID

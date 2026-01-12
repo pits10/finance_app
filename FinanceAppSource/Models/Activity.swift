@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Activity {
+final class Activity: @unchecked Sendable {
     @Attribute(.unique) var id: UUID
     var userId: UUID
     var type: ActivityType
