@@ -187,7 +187,7 @@ struct RaiseAssetRow: View {
 
 // MARK: - Add Asset Sheet
 struct AddAssetSheet: View {
-    @ObservedObject var viewModel: RaiseViewModel
+    @Bindable var viewModel: RaiseViewModel
     let accentColor: Color
     @Environment(\.dismiss) private var dismiss
 

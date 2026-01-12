@@ -162,7 +162,7 @@ struct WatchlistItemRow: View {
 
 // MARK: - Add Watchlist Item Sheet
 struct AddWatchlistItemSheet: View {
-    @ObservedObject var viewModel: WatchlistViewModel
+    @Bindable var viewModel: WatchlistViewModel
     let accentColor: Color
     @Environment(\.dismiss) private var dismiss
 
